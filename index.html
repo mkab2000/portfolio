@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel='stylesheet' id='astra-google-fonts-css' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro%3Anormal%2C400%7CMontserrat%3A600%2C700&#038;display=fallback&#038;ver=3.9.2' media='all' />
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/f9be02add2.js" crossorigin="anonymous"></script>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icon.png">
+    <title>Kabdygali Miras</title>
+</head>
+
+<body>
+    <section id="work-section" style="display: block;">
+
+    <!-- ---header--- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/name.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Miras</span><br>from Kazakhstan</h1>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ---about--- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me3.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am looking for a job that offers the opportunity to work with modern front-end technologies, such as React and Vue.js, and more. I am also seeking an environment that encourages teamwork and collaboration, where I can work on challenging tasks that will push me to improve as an engineer.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('awards')">Awards</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Certifications</span><br>
+                                freeCodeCamp - <a href="https://www.freecodecamp.org/certification/miraskab/responsive-web-design" target="_blank">Responsive Web Design</a><br>
+                                freeCodeCamp - <a href="https://www.freecodecamp.org/certification/miraskab/javascript-algorithms-and-data-structures" target="_blank">JavaScript Algorithms and Data Structures</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>BBA from KAIST</li>
+                            <li><span>Coursework</span><br>Introduction to Software Engineering<br>
+                            System Programming<br>Computer Organization<br>Artificial Intelligence Based Software Engineering<br>Compiler Design<br> 
+                            Programming Language<br>Computer Game Technology<br>Introduction to Database<br>Introduction to Computer Vision</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="awards">
+                        <ul>
+                            <li><span>2017</span><br>Inernational Zhautykov Olympiad - <b>Bronze</b><br>
+                                Republican Mathematics Olympiad - <b>Bronze</b></li>
+                            <li><span>2016</span><br>Inernational Zhautykov Olympiad - <b>Bronze</b><br>
+                                Republican Mathematics Olympiad - <b>Silver</b><br>
+                                International Tuymaada olympiad - <b>Silver</b><br>
+                                Moscow Mathematical Multiathlon - <b>1st place</b><br>
+                                Silk Road Mathematical Olympiad - <b>3rd place</b></li>
+                            <li><span>2015</span><br>Republican Mathematics Olympiad - <b>Bronze</b></li>
+                            <li><span>2014</span><br>Leonard Euler Mathematical Olympiad - <b>2nd place</b><br>
+                                International Mathematics Competition - <b>Bronze</b></li>
+                        </ul>
+                    </div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---services--- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+                    <p class="services-header"><span>Things I enjoy designing:</span></p>
+                    <p>UX, UI, Webs, Logos</p>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
+                    <p class="services-header"><span>I am familiar with:</span></p>
+                    <p>JavaScript, HTML, CSS, Git, React, Python</p>
+                </div>
+                <!-- <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam placerat, quam vel ornare consectetur, massa orci hendrerit diam, vitae auctor lacus quam vel ipsum.</p>
+                    <a href="#">Learn more</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ---portfolio--- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/works-kokomi.png">
+                    <div class="layer">
+                        <h3>Kokomi Guide</h3>
+                        <p>An interactive web-page guide for Sangonomiya Kokomi from Genshin Impact.</p>
+                        <a href="https://mkab2000.github.io/kokomi/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/works-minesweeper.png">
+                    <div class="layer">
+                        <h3>Minesweeper</h3>
+                        <p>A fully functional rendition of a popular game with a minor coloring scheme twist.</p>
+                        <a href="https://mkab2000.github.io/minesweeper/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <button class="btn" onclick="showMoreWorks('more-works')">See more</button>
+
+            <div id="more-works" style="display: none;">
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/works-calculator.png">
+                        <div class="layer">
+                            <h3>Calculator</h3>
+                            <p>A fully functional calculator, with 3 different theme choices.</p>
+                            <a href="https://mkab2000.github.io/calculator/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/works-ageCalculator.png">
+                        <div class="layer">
+                            <h3>Age Calculator</h3>
+                            <p>An app that calculates exact amount of time since one's birthday.</p>
+                            <a href="https://mkab2000.github.io/Age-Calculator/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/works-adviceGenerator.png">
+                        <div class="layer">
+                            <h3>Advice Generator</h3>
+                            <p>An app that uses a 3rd party API to generate random advice.</p>
+                            <a href="https://mkab2000.github.io/Advice-Generator/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/works-resultsSummary.png">
+                        <div class="layer">
+                            <h3>Results Summary</h3>
+                            <p>A practice app for operations with flexbox.</p>
+                            <a href="https://mkab2000.github.io/Result-Summary/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/works-QR.png">
+                        <div class="layer">
+                            <h3>QR-code</h3>
+                            <p>A practice app for operations with flexbox.</p>
+                            <a href="https://mkab2000.github.io/QR-Code/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/works-ImmI.png">
+                        <div class="layer">
+                            <h3>ImmI</h3>
+                            <p>Android app to help travelers and immigrants to search quantitative information about various cities..</p>
+                            <a href="https://github.com/AnuarTB/immi-cs350" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn" onclick="showNewPage()">Miscellaneous</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- ---contact--- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> miras.kab@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +77018800510</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/mkab2000" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="Miras.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+    
+
+    <section id="hobby-section" style="display: none;">
+    <button id="back-btn" onclick="showNewPage()"><i class="fa-solid fa-backward"></i></button>
+    <div id="artworks">
+        <div class="container">
+            <h1 class="sub-title">Artworks</h1>
+            <div id="art-list">
+                <div class="work" style="grid-area: top-right;">
+                    <img src="images/Arts/Maki.png">
+                    <div class="layer">
+                        <p>Conventional lineart/coloring/shading. Originally sketched by me, preem lineart requested for an acquaintance.</p>
+                        <a href="https://imgur.com/a/vRP5ULR" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        <br>
+                        <p>Full resolution</p>
+                    </div>
+                </div>
+                <div class="work" style="grid-area: top-left;">
+                    <img src="images/Arts/Nezu.png">
+                    <div class="layer">
+                        <p>Adjusting for Japanese ink style.</p>
+                        <a href="https://imgur.com/a/GJBa5Vo" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        <br>
+                        <p>Full resolution</p>
+
+                    </div>
+                </div>
+                
+                <div class="work" style="grid-area: middle;">
+                    <img src="images/Arts/Wings.png">
+                    <div class="layer">
+                        <p>Adaptation of early AI arts, which might as well have been glorified filters, to conventional.</p>
+                        <a href="https://imgur.com/a/fDCbDgm" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        <br>
+                        <p>Full resolution</p>
+                    </div>
+                </div>
+
+               
+            </div>
+            <button class="btn" onclick="showMoreWorks('more-artworks')">Chibi emotes</button>
+            <div id="more-artworks" style="display: none">
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/Arts/Cross.png">
+                        <div class="layer">
+                            <p>A chibi made for acquaintances to use in a discord server.</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/Arts/Think.png">
+                        <div class="layer">
+                            <p>A chibi made for acquaintances to use in a discord server.</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/Arts/Nerd.png">
+                        <div class="layer">
+                            <p>A chibi made for acquaintances to use in a discord server.</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/Arts/Bleh.png">
+                        <div class="layer">
+                            <p>A chibi made for acquaintances to use in a discord server.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div id="music">
+        <div class="container">
+            <h1 class="sub-title">Music</h1>
+            <p>(30 second fragment)</p>
+            <div class="song">
+                <h2><span id="song-title-1" class="song-title">Walpurgis</span></h2>
+                <audio id="song1" class="player" src="/audio/walpurgis.mp3" onplay="playSong('song1')" onpause="unHighlightSongs()" controls>Failed to load the audio element.</audio>
+            </div>
+            <div class="song">
+                <h2><span id="song-title-2" class="song-title">Burn</span></h2>
+                <audio id="song2" class="player" src="/audio/Burn.mp3" onplay="playSong('song2')" onpause="unHighlightSongs()" controls>Failed to load the audio element.</audio>
+            </div>
+            <!-- <audio class="player" src="/audiio/burn.mp3" controls volume="0.5">Failed to load the audio element.</audio> -->
+        </div>
+    </div>
+    </section>
+    <div>
+        <div class="left-gate" style="background-color: black;"></div>
+        <div class="right-gate" style="background-color: black;"></div>
+        <div class="left-gate">
+            <img id="left-gate-image" class="gate-image" src="images/quciken0.png">
+        </div>
+        <div class="right-gate">
+            <img id="right-gate-image" class="gate-image" src="images/quicken1.png">
+        </div>
+    </div>
+</body>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz32ZdDmMdsyKAxYGB97r4Yps8izCrBvCEISYKXB7onTDYtv_q8-o6RmdqMddVoNM9r/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully";
+            setTimeout(function() {
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</html>
