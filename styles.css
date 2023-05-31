@@ -425,7 +425,10 @@ nav .fa-solid {
 #more-artworks img {
     border: none;
 }
+#more-artworks > div {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
 
+}
 /* --- Music pieces --- */
 .song {
     display: flex;
@@ -440,7 +443,7 @@ nav .fa-solid {
     width: 300px;
     background: linear-gradient(135deg, var(--dimmed-main-color), black 70%);
     padding: 12px;
-    border-radius: 10px;
+    border-radius: 25px;
     /* padding: 10px; */
 }
 .song-title {
@@ -590,7 +593,9 @@ nav .fa-solid {
         position: relative;
         margin-bottom: 0;
     }
-    #artworks {
+    #more-artworks > div {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
         /* margin-top: 80px; */
     }
     #art-list {
